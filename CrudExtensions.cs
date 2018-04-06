@@ -1,5 +1,6 @@
 using Dapper;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Dynamic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Dapper.Crud
 {
     public static class CrudExtensions
     {
-        public static async Task<int> Insert(this SqlConnection con, string tableName, object parametersObject)
+        public static async Task<int> Insert(this IDbConnection con, string tableName, object parametersObject)
         {
             string sql = CreateInsertSqlStatement(tableName, parametersObject);
             sql += "SELECT SCOPE_IDENTITY();";
@@ -19,7 +20,7 @@ namespace Dapper.Crud
             return await con.QuerySingleAsync<int>(sql, parametersObject);
         }
 
-        public static async Task InsertMulti(this SqlConnection con, string tableName, IEnumerable<object> parametersObjects, SqlTransaction transaction = null)
+        public static async Task InsertMulti(this IDbConnection con, string tableName, IEnumerable<object> parametersObjects, SqlTransaction transaction = null)
         {
             string sql = CreateInsertSqlStatement(tableName, parametersObjects.ElementAt(0));  
 
@@ -32,7 +33,7 @@ namespace Dapper.Crud
             }
         }
 
-        public static async Task Update(this SqlConnection con, string tableName, object identityParameters, object parametersObject)
+        public static async Task Update(this IDbConnection con, string tableName, object identityParameters, object parametersObject)
         {
             IEnumerable<PropertyInfo> propertyInfo = parametersObject.GetType().GetProperties();
             IEnumerable<PropertyInfo> identityPropertyInfo = identityParameters.GetType().GetProperties();
@@ -56,7 +57,7 @@ namespace Dapper.Crud
             await con.ExecuteAsync(sql, allParameters);
         }
 
-        public static async Task Delete(this SqlConnection con, string tableName, object identityProperties)
+        public static async Task Delete(this IDbConnection con, string tableName, object identityProperties)
         {
             string sql = CreateDeleteSqlStatement(tableName, identityProperties);
 

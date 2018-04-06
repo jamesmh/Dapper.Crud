@@ -1,2 +1,3 @@
 # Dapper.Crud
-Crud for Dapper
+
+Extensions methods for `IDbConnection` to enable easy CRUD operations using Dapper.
