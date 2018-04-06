@@ -1,0 +1,9 @@
+D:\personal\HomesteadCode\Dapper.Crud\bin\Debug\netstandard2.0\Dapper.Crud.deps.json
+D:\personal\HomesteadCode\Dapper.Crud\bin\Debug\netstandard2.0\Dapper.Crud.dll
+D:\personal\HomesteadCode\Dapper.Crud\bin\Debug\netstandard2.0\Dapper.Crud.pdb
+D:\personal\HomesteadCode\Dapper.Crud\obj\Debug\netstandard2.0\Dapper.Crud.csprojResolveAssemblyReference.cache
+D:\personal\HomesteadCode\Dapper.Crud\obj\Debug\netstandard2.0\Dapper.Crud.csproj.CoreCompileInputs.cache
+D:\personal\HomesteadCode\Dapper.Crud\obj\Debug\netstandard2.0\Dapper.Crud.AssemblyInfoInputs.cache
+D:\personal\HomesteadCode\Dapper.Crud\obj\Debug\netstandard2.0\Dapper.Crud.AssemblyInfo.cs
+D:\personal\HomesteadCode\Dapper.Crud\obj\Debug\netstandard2.0\Dapper.Crud.dll
+D:\personal\HomesteadCode\Dapper.Crud\obj\Debug\netstandard2.0\Dapper.Crud.pdb
