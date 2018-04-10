@@ -1932,11 +1932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\personal\\HomesteadCode\\Dapper.Crud\\Dapper.Crud.csproj",
+      "projectUniqueName": "D:\\personal\\HomesteadCode\\Dapper.Crud\\Library\\Dapper.Crud.csproj",
       "projectName": "Dapper.Crud",
-      "projectPath": "D:\\personal\\HomesteadCode\\Dapper.Crud\\Dapper.Crud.csproj",
+      "projectPath": "D:\\personal\\HomesteadCode\\Dapper.Crud\\Library\\Dapper.Crud.csproj",
       "packagesPath": "C:\\Users\\JamesH\\.nuget\\packages\\",
-      "outputPath": "D:\\personal\\HomesteadCode\\Dapper.Crud\\obj\\",
+      "outputPath": "D:\\personal\\HomesteadCode\\Dapper.Crud\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
