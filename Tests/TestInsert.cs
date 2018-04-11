@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 using System;
+using Tests.Db.Models;
+using Tests.Db.Utils;
 
 namespace Tests
 {
@@ -16,7 +18,7 @@ namespace Tests
     public class TestInsert
     {
         [TestMethod]
-        public async Task InsertSingle()
+        public async Task InsertSingleTest()
         {            
             IEnumerable<TestTableEntity> rows = null;
 
@@ -24,7 +26,7 @@ namespace Tests
             {
                 using (var connection = new SqlConnection(Settings.ConnectionString))
                 {
-                    await ClearTestTable.Clear(connection);
+                    await TableUtils.ClearTestDB(connection);
 
                     int id = await connection.Insert("TestTable", new { TestString = "HI", TestInt = 5 });
 

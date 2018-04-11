@@ -1,4 +1,4 @@
-namespace Tests.Db
+namespace Tests.Db.Models
 {
     public class TestTableEntity
     {

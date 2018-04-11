@@ -2,11 +2,11 @@ using System.Data.SqlClient;
 using System.Threading.Tasks;
 using Dapper;
 
-namespace Tests.Db
+namespace Tests.Db.Utils
 {
-    public class ClearTestTable
+    public class TableUtils
     {
-        public static async Task Clear(SqlConnection con){
+        public static async Task ClearTestDB(SqlConnection con){
             await con.ExecuteAsync("DELETE FROM TestTable");
         }
     }
