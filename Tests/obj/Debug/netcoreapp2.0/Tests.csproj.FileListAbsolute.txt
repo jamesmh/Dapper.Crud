@@ -1,0 +1,17 @@
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Tests.deps.json
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.json
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Tests.runtimeconfig.dev.json
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Tests.dll
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Tests.pdb
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Dapper.Crud.dll
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Dapper.Crud.pdb
+D:\personal\HomesteadCode\Dapper.Crud\Tests\obj\Debug\netcoreapp2.0\Tests.csproj.CoreCompileInputs.cache
+D:\personal\HomesteadCode\Dapper.Crud\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfoInputs.cache
+D:\personal\HomesteadCode\Dapper.Crud\Tests\obj\Debug\netcoreapp2.0\Tests.AssemblyInfo.cs
+D:\personal\HomesteadCode\Dapper.Crud\Tests\obj\Debug\netcoreapp2.0\Tests.csproj.CopyComplete
+D:\personal\HomesteadCode\Dapper.Crud\Tests\obj\Debug\netcoreapp2.0\Tests.dll
+D:\personal\HomesteadCode\Dapper.Crud\Tests\obj\Debug\netcoreapp2.0\Tests.pdb
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\personal\HomesteadCode\Dapper.Crud\Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+d:\personal\HomesteadCode\Dapper.Crud\Tests\obj\Debug\netcoreapp2.0\Tests.csprojResolveAssemblyReference.cache
