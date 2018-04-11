@@ -19,23 +19,16 @@ namespace Tests
     {
         [TestMethod]
         public async Task InsertSingleTest()
-        {            
+        {
             IEnumerable<TestTableEntity> rows = null;
 
-            try
+            using (var connection = new SqlConnection(Settings.ConnectionString))
             {
-                using (var connection = new SqlConnection(Settings.ConnectionString))
-                {
-                    await TableUtils.ClearTestDB(connection);
+                await TableUtils.ClearTestDB(connection);
 
-                    int id = await connection.Insert("TestTable", new { TestString = "HI", TestInt = 5 });
+                int id = await connection.Insert("TestTable", new { TestString = "HI", TestInt = 5 });
 
-                    rows = await connection.QueryAsync<TestTableEntity>("Select * from TestTable WHERE TestTableID = @ID", new { ID = id });
-                }
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e.Message);
+                rows = await connection.QueryAsync<TestTableEntity>("Select * from TestTable WHERE TestTableID = @ID", new { ID = id });
             }
 
             Assert.AreEqual(1, rows.Count());
