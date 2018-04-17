@@ -64,6 +64,10 @@ namespace Dapper.Crud
             await con.ExecuteAsync(sql, identityProperties);
         }
 
+        public static async Task DeleteAll(this IDbConnection con, string tableName){
+            await con.ExecuteAsync($"DELETE FROM {tableName};");
+        }
+
         // -------------------
         // --- Private Methods
         // -------------------
